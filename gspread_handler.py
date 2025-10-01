@@ -16,7 +16,7 @@ def update_raw(df, spread):
     """
     Sube todo el dataframe a la hoja RAW del spreadsheet
     """
-    spread.df_to_sheet(df, index=False, sheet='RAW', start='A2', replace=True)
+    spread.df_to_sheet(df, index=False, sheet='RAW', start='A2', replace=False)
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     spread.update_cells('A1', 'B1', ['Last updated:', now])
     print("RAW updated succesfully at:", now)
