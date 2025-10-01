@@ -28,11 +28,11 @@ if __name__ == "__main__":
     df = generate_reports(base_dir=base_dir, elements=elements, structures=structures, stages=stages, metrics=metrics)
 
     # Opción 2: Cargarlo desde el disco
-    df = pd.read_csv("./thesis_scripts/csv/report.csv")
-    elements = ["Sc", "Ti", "V", "Cr", "Mn", "Fe", "Co", "Ni", "Cu", "Zn"]
-    structures = ["M2b", "MN", "MN2", "MN3", "MN4", "M2N4", "M2N5", "M2N5b", "M2N6"]
-    df["Element"] = pd.Categorical(df["Element"], categories=elements, ordered=True)
-    df["Structure"] = pd.Categorical(df["Structure"], categories=structures, ordered=True)
+    # df = pd.read_csv("./thesis_scripts/csv/report.csv")
+    # elements = ["Sc", "Ti", "V", "Cr", "Mn", "Fe", "Co", "Ni", "Cu", "Zn"]
+    # structures = ["M2b", "MN", "MN2", "MN3", "MN4", "M2N4", "M2N5", "M2N5b", "M2N6"]
+    # df["Element"] = pd.Categorical(df["Element"], categories=elements, ordered=True)
+    # df["Structure"] = pd.Categorical(df["Structure"], categories=structures, ordered=True)
 
 
     # Abrimos la spreadsheet de google 
